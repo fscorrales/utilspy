@@ -43,6 +43,7 @@ def correct(words: list) -> list:
     print("Corrected words are: ")
     for i in corrected_words:
         print(i.correct(), end=' ')
+    return corrected_words
 
 # --------------------------------------------------
 def main():
