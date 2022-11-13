@@ -35,7 +35,7 @@ def get_args():
     return parser.parse_args()
 
 # --------------------------------------------------
-def convert_pdf_to_docx(pdf_file, docx_file):
+def convert_pdf_to_docx(pdf_file: str, docx_file: str):
     """Convert pdf to docx"""
     cv = Converter(pdf_file)
     cv.convert(docx_file)
