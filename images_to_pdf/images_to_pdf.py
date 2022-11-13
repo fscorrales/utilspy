@@ -36,7 +36,7 @@ def get_args():
     return parser.parse_args()
 
 # --------------------------------------------------
-def image_pdf(filename, output):
+def image_pdf(filename:str, output:str):
     """Convert list of images to pdf"""
     images = []
     for file in filename:
