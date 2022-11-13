@@ -37,14 +37,13 @@ def get_vowels(words: list) -> list:
     vowels = []
     for i in words:
         vowels.append([each for each in i if each in 'aeiou'])
-    print(vowels)
     return vowels
 
 # --------------------------------------------------
 def main():
     """Make a jazz noise here"""
     args = get_args()
-    get_vowels(args.words)
+    print(get_vowels(args.words))
 
 # --------------------------------------------------
 if __name__ == '__main__':
