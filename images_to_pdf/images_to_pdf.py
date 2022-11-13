@@ -56,4 +56,4 @@ def main():
 # --------------------------------------------------
 if __name__ == '__main__':
     main()
-    #python images_to_pdf.py test.png test2
+    #python images_to_pdf.py test.png test2.jpg
