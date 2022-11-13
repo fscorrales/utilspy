@@ -1,5 +1,8 @@
-#File storage
-# Youtube source: https://www.youtube.com/watch?v=2535DhGy0oE&t=1s
+# File storage
+# Youtube source: https://youtu.be/2535DhGy0oE
+# Require package:
+#  - pip install gofile
+
 import gofile as go
 
 def store_file(file):
