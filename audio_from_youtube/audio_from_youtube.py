@@ -2,7 +2,7 @@
 """
 Author: Fernando Corrales <fscorrales@gmail.com>
 Source: twitter
-Purpose: Transcribe audio from Youtube
+Purpose: Transcribe audio from Youtube (Not Working)
 Require package: 
     - pytube
     - whisper (pip install git+https://github.com/openai/whisper.git)
@@ -18,7 +18,7 @@ import whisper
 def get_args():
     """Get Youtube URL and output file name from user input"""
     parser = argparse.ArgumentParser(
-        description = 'Transcribe audio from Youtube',
+        description = 'Transcribe audio from Youtube (Not Working)',
         formatter_class = argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument(
