@@ -33,7 +33,7 @@ def unzip_files(zipfile_name:str):
     with ZipFile(zipfile_name, 'r') as zip_object:
         zip_object.extractall()
     return zip_object
-    #image_pdf(["image1.jpg", "image2.png"], "output.pdf")
+    #unzip_files("zip_file.zip")
 
 # --------------------------------------------------
 def main():
