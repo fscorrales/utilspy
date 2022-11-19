@@ -3,7 +3,7 @@
 Author: Fernando Corrales <fscorrales@gmail.com>
 Source: clcoding.com
 Youtube source: https://youtu.be/lY40rpBtmrE
-Purpose: Convert pdf to tiff (NOT WORKING)
+Purpose: Convert pdf to any (NOT WORKING)
 Require package: aspose_words
 """
 
@@ -13,9 +13,9 @@ import aspose.words as aw
 
 # --------------------------------------------------
 def get_args():
-    """Get pdf_file and tiff_file name from user input"""
+    """Get pdf_file and output file name from user input"""
     parser = argparse.ArgumentParser(
-        description = 'Convert pdf to tiff (NOT WORKING)',
+        description = 'Convert pdf to any (NOT WORKING)',
         formatter_class = argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument(
@@ -27,29 +27,30 @@ def get_args():
 
     parser.add_argument(
         '-o', '--output', 
-        metavar = 'tiff_name', 
+        metavar = 'output_name', 
         default = 'output.tiff',
-        help = "tiff's file name with extension",
+        help = "Output file's name with desire extension",
         type = str)
 
     return parser.parse_args()
 
 # --------------------------------------------------
-def pdf_to_tiff(pdf_file: str, tiff_file: str):
-    """Convert pdf to tiff"""
+def pdf_to_any(pdf_file: str, 
+                output_file: str = 'output.tiff'):
+    """Convert pdf to any"""
     pdf = aw.Document(pdf_file)
-    pdf.save(tiff_file)
-    #pdf_to_tiff('pdf_file.pdf', 'tiff_file.tiff')
+    pdf.save(output_file)
+    #pdf_to_any('pdf_file.pdf', 'tiff_file.tiff')
 
 
 # --------------------------------------------------
 def main():
     """Make a jazz noise here"""
     args = get_args()
-    pdf_to_tiff(args.filename, args.output)
+    pdf_to_any(args.filename, args.output)
     print('Complete')
 
 # --------------------------------------------------
 if __name__ == '__main__':
     main()
-    #python pdf_to_tiff.py test.pdf
+    #python pdf_to_any.py test.pdf
